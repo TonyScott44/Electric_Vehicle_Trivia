@@ -1,2 +1,2 @@
-# Hangman_EV_Edition
-Hangman:  Electric Vehicle Edition
+# Electric_Vehicle_Trivia
+Electric Vehicle Trivia
