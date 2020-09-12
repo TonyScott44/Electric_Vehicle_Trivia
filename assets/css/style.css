@@ -1,0 +1,90 @@
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
+  .overlay-off & {
+    z-index: 0;
+  }
+}
+#bgImage {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+  #mainTitle{
+    position: absolute;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 50px;
+    color: white;
+    z-index: 100;
+    font-weight: 500;
+    margin: 30px 0 0 40px;
+  }
+  #subTitle{
+    position: absolute;
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: lightgreen;
+    z-index: 100;
+    margin: 135px 0 0 40px;
+  }
+  #gameBoard{
+    position: absolute;
+    margin: 265px 0 0 40px;
+  }
+  #controlPanel{
+    position: absolute;
+    margin: 750px 0 0 40px;
+  }
+    
+  @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    #bgImage{
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+  }
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  #bgImage { height: 300%; top: -100%; }
+} */
+/* @media (max-aspect-ratio: 16/9) {
+  #bgImage { width: 300%; left: -100%; }
+} */
