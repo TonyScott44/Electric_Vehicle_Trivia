@@ -9,7 +9,8 @@
   <meta name="author" content="Tony Scott">
 
 
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Syncopate&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Serif&family=Syncopate&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="assets/css/reset.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -18,28 +19,44 @@
 </head>
 
 <body>
-    <container>
-        <h1 id="mainTitle">Electric<br>Vehicle</h1>
-        <h1 id="subTitle">Trivia</h1>
-        <div id = "gameBoard">
-            <h1>Game Board</h1>
-        </div>
-        <div id = "controlPanel">
-            <h1>Control Panel</h1>
-        </div>
-    </container>
+    <br>
+    <br>
+    <br>
+    <div id="stats">
+        <p id="wins">&nbsp;&nbsp;Wins:&nbsp;<span id="win">0</span></p>
+        <p id="loses">Loses:&nbsp;<span id="lose">0</span></p>
+    </div>
+    <h1 id="mainTitle">Electric<br>Vehicle</h1>
+    <h1 id="subTitle">Trivia</h1>
+    <div id="hint">
+        <h1 id="hintHint"></h1>
+    </div>
+    <div id = "gameBoard">
+        <h1 id="gmBoard"></h1>
+    </div>
 
-    <div class="video-overlay"></div>
+    <div id = "controlPanel">
+        <div id="gRemaining">
+            <p id="gm1"></p>
+            <p id="gm"></p>
+        </div>
+        <div id="wrgGuesses">
+            <p id="wg"></p>
+            <p id="guessedWrong"></p>
+        </div>
+    </div>
+
+    <!-- <div class="video-overlay"></div> -->
 
     <div id="cImage">
         <img  id="bgImage" src="assets/images/ggbridge.jpg">
     </div>
 
-    <div id="bgVideo" class="video-background">
+    <!-- <div id="bgVideo" class="video-background">
         <div class="video-foreground">
             <iframe src="https://www.youtube.com/embed/O2rT7ELCkgQ?controls=0&showinfo=0&rel=0&start=00&autoplay=1&loop=0&playlist=PLY-M-dfKubpdXewUVcS4PK19A9rPBNorc&mute=1" frameborder="0" allowfullscreen></iframe>
         </div>
-    </div>
+    </div> -->
 
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
