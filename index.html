@@ -13,8 +13,9 @@
 
 
   <link rel="stylesheet" href="assets/css/reset.css">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://stackgpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/keyboard.css">
 
 </head>
 
@@ -23,34 +24,44 @@
     <br>
     <br>
     <div id="stats">
-        <p id="wins">&nbsp;&nbsp;Wins:&nbsp;<span id="win">0</span></p>
-        <p id="loses">Loses:&nbsp;<span id="lose">0</span></p>
+        <p id="wins">&nbsp;&nbsp;&nbsp;&nbsp;Wins:&nbsp;<span id="win">0</span></p>
+        <p id="loses">Losses:&nbsp;<span id="l">0</span></p>
     </div>
     <h1 id="mainTitle">Electric<br>Vehicle</h1>
-    <h1 id="subTitle">Trivia</h1>
-    <div id="hint">
-        <h1 id="hintHint"></h1>
-    </div>
+    <h1 id="subTitle">Word Guess</h1>
+
+    <!-- <div id="leftPanel">
+        <h1 id="lpTitle"></h1>
+        <p id="lpText"></p>
+    </div> -->
+    
     <div id = "gameBoard">
-        <h1 id="gmBoard"></h1>
+        <h1 id="gbTitle">Welcome to Electric Vehicle Word Guess!</h1>
+        <p id="gbSubTitle">Press any key to get started.</p>
+        <p id="gbText"></p>
+        <div>
+            <p id="gameMsg"></p>
+        </div>
     </div>
 
     <div id = "controlPanel">
-        <div id="gRemaining">
-            <p id="gm1"></p>
-            <p id="gm"></p>
+        <div id="cpSection1">
+            <p id="guessesRemTitle"></p>
+            <p id="guessesRemText"></p>
         </div>
-        <div id="wrgGuesses">
-            <p id="wg"></p>
+        <div id="cpSection2">
+            <p id="wrongGuessesTitle"></p>
             <p id="guessedWrong"></p>
         </div>
     </div>
 
+    <!-- <textarea class="use-keyboard-input" style="position: absolute; top: 130px; right: 30px; width: 300px;"></textarea> -->
+
     <!-- <div class="video-overlay"></div> -->
 
-    <div id="cImage">
+    <!-- <div id="cImage">
         <img  id="bgImage" src="assets/images/ggbridge.jpg">
-    </div>
+    </div> -->
 
     <!-- <div id="bgVideo" class="video-background">
         <div class="video-foreground">
@@ -65,6 +76,7 @@
     </script>
 
     <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/keyboard.js"></script>
 </body>
 </html>
 

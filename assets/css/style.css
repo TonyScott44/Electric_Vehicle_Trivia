@@ -1,59 +1,40 @@
+body{
+  background-position: center center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; background-size: cover; 
+  background-image: url(images/bmwI3BG.jpg);
+}
 
-/* .video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,.4);
-  z-index: 2;
-  .overlay-off & {
-    z-index: 0;
-  }
-} */
-#bgImage {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-      
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-      
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100;
-  }
   #mainTitle{
     font-family: 'Syncopate', sans-serif;
     font-size: 50px;
     color: white;
     font-weight: 500;
-    margin: -60px 0 0 400px;
-    position: sticky;
+    margin: 5px 0 0 400px;
+    position: fixed;
   } 
   #subTitle{
     font-family: 'Monoton', cursive;
     font-size: 35px;
     color: lightgreen;
     margin: 7px 0 0 400px;
-    position: sticky;
+    position: fixed;
+
+    /* position: sticky; */
   }
   #gameBoard{
-    margin: -350px 0 0 788px;
+    margin: 50px 0 0 400px;
     background-color:rgba(0,0,0,.7);
     border-radius: 8px;
-    width:585px;
+    width: 980px;
     height:350px;
-    position: sticky;
+    position: fixed;
   }
   #controlPanel{
     margin: 50px 0 50px 400px;
     background-color: rgba(0,0,0,.7);
     border-radius: 8px;
-    width: 980px;
+    width: 950px;
     height:93px;
     color: white;
     font-family: 'Syncopate', sans-serif;
@@ -63,55 +44,47 @@
   #stats{
     font-family: 'Syncopate', sans-serif;
     background-color: rgba(0,0,0,.7);
-    margin: 0 0 0 0;
     border-radius: 8px;
     color: white;
     width:135px;
-    height:65px;
-    padding:13px;
-    font-size: 20px;
-    position: sticky;
-  }
-  #hint{
-    margin: 70px 0 0 400px;
-    background-color: rgba(0,0,0,.7);
-    border-radius: 8px;
-    width:300px;
-    height:320px;
-    font-weight: 300;
-    line-height: 40px; 
+    height:47px;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
   }
   #win{
     color:lightgreen;
     font-weight: 500;
+    
   }
-  #lose{
+  #l{
     color:red;
     font-weight: 500;
  }
- #gRemaining{
+ #cpSection1{
   border-right: 2px solid lightgreen;
   width: 150px;
   height: 75px;
   text-align: center;
   line-height: 19px; 
  }  
- #wrgGuesses{
+ #cpSection2{
   border-left: 2px solid white;
    margin: -75px 0 0 155px;
    height: 51px;
    padding:12px;
    text-align: center;
  }
- #gm{
-   font-size: 44px;
-   margin-top: 8px;
-   line-height: 40px; 
- }
- #gm1{
+ #guessesRemTitle{
   color:lightgreen;
 }
-#wg{
+#guessesRemText{
+  font-size: 44px;
+  margin-top: 8px;
+  line-height: 40px; 
+}
+#wrongGuessesTitle{
   line-height: 22px;
 }
  #guessedWrong{
@@ -120,106 +93,368 @@
   font-size: 30px;
 
  }
- #gmBoard{
-  font-size: 44px;
-  margin-top: 50px;
+ #gbTitle{
+  font-size: 39px;
   color: lightgreen;
-  padding:130px;
+  padding-left:100px;
+  padding-top:100px;
+  padding-right:100px;
   font-family: 'Syncopate', sans-serif;
   text-align: center;
  }
- #hintHint{
-  font-size: 30px;
+ #gbSubTitle{
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  color:white;
+  margin-top: 35px;
+  font-size: 20px;
+ }
+ #gbText{
+  font-size: 50px;
+  color: lightgreen;
+  padding:35px;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  /* margin-top: -90px; */
+  line-height: 47px; 
+
+ }
+ #lpTitle{
+  font-size: 25px;
   margin-top: 25px;
   color: white;
-  padding:50px;
-  font-family: 'Noto Serif', serif;
+  padding:60px;
+  font-family: 'Syncopate', sans-serif;
   text-align: center;
  }
-  @media screen and (max-width: 1024px) { /* Specific to this particular image */
-    #bgImage{
-      left: 50%;
-      margin-left: -512px;   /* 50% */
-    }
+ #lpText{
+  font-family: 'Syncopate', sans-serif;
+  font-size: 15px;
+  color:red;
+  
+ }
+
+ /* Smaller Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-device-width : 280px) {
+/* Styles */
+  body{
+    background-image: url(images/phoneBG.jpg);
   }
-/* * { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-} */
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-
-
-@media only screen and (max-width: 320px) {
+  #subTitle{
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: lightgreen;
+    margin: 110px 0 0 400px;
+    position: fixed;
+    /* position: sticky; */
+  }
+  #gameBoard{
+    margin: 200px 0 0 400px;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 980px;
+    height:350pxtes;
+    position: fixed;
+  }
+  #controlPanel{
+    margin: 600px 0 50px 400px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 950px;
+    height:93px;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+    padding:15px;
+    position: sticky;
+  }
   #stats{
-    margin: 4px 0 0 40px;
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    color: white;
+    width:135px;
+    height:47px;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    margin: 14px 0 0 1250px;
   }
-
 }
 
-/*  */
-@media only screen and (min-width: 480px) {
-  #stats{
-    margin: 4px 0 0 340px;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+  body{
+    background-image: url(images/phoneBG.jpg);
   }
-
+  #mainTitle{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 95px;
+    color: white;
+    font-weight: 500;
+    margin: 5px 0 0 44px;
+    /* position: fixed; */
+  } 
+  #subTitle{
+    font-family: 'Monoton', cursive;
+    font-size: 85px;
+    color: skyblue;
+    margin: 180px 0 0 44px;
+    position: fixed;
+    font-weight:400;
+    /* position: sticky; */
+  }
+  #gameBoard{
+    margin: 330px 0 0 0;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 1000px;
+    height:750px;
+    position: fixed;
+  }
+  #gbTitle{
+    font-size: 70px;
+    color: skyblue;
+    padding-left:100px;
+    padding-top:200px;
+    padding-right:100px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+   }
+   #gbSubTitle{
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    /* margin-top:70px; */
+   }
+   #gbText{
+    font-size: 130px;
+    color: skyblue;
+    padding:45px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    margin-top: -120px;
+    line-height: 115px; 
+  
+   }
+   #gameMsg{
+    font-size: 32px;
+    color: white;
+    padding:45px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    line-height: 40px; 
+  
+   }
+  #controlPanel{
+    margin: 1000px 0 2000px 0;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 950px;
+    height:150px;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+    padding:15px;
+    position: sticky;
+  }
+  #cpSection1{
+    border-right: 4px solid skyblue;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    line-height: 19px; 
+   }  
+   #cpSection2{
+    border-left: 4px solid white;
+     margin: -150px 0 0 315px;
+     height: 125px;
+     padding:12px;
+     text-align: center;
+   }
+   #guessesRemTitle{
+    color:skyblue;
+    font-size: 35px;
+    line-height: 40px; 
+  }
+  #guessesRemText{
+    font-size: 60px;
+    margin-top: 8px;
+    line-height: 40px; 
+  }
+  #wrongGuessesTitle{
+    line-height: 22px;
+    font-size:33px;
+  }
+   #guessedWrong{
+    color:red;
+    margin-top: 8px;
+    font-size: 50px;
+  
+   }
+  #stats{
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    color: white;
+    width:250px;
+    height:115px;
+    padding-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    /* position: relative; */
+    margin: 35px 0 0 700px;
+  }
 }
 
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #stats{
-    margin: 4px 0 0 540px;
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+  body{
+    background-image: url(images/bmwI3BG.jpg);
   }
-
+  #subTitle{
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: lightgreen;
+    margin: 110px 0 0 400px;
+    position: fixed;
+    /* position: sticky; */
+  }
+  #gameBoard{
+    margin: 200px 0 0 400px;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 980px;
+    height:350pxtes;
+    position: fixed;
+  }
+  #controlPanel{
+    margin: 600px 0 50px 400px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 950px;
+    height:93px;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+    padding:15px;
+    position: sticky;
+  }
+  #stats{
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    color: white;
+    width:135px;
+    height:47px;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    margin: 14px 0 0 1250px;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 768px) {
-  #stats{
-    margin: 4px 0 0 740px;
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+  body{
+    background-image: url(images/bmwI3BG.jpg);
   }
-
+  #subTitle{
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: lightgreen;
+    margin: 110px 0 0 400px;
+    position: fixed;
+    /* position: sticky; */
+  }
+  #gameBoard{
+    margin: 200px 0 0 400px;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 980px;
+    height:350pxtes;
+    position: fixed;
+  }
+  #controlPanel{
+    margin: 600px 0 50px 400px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 950px;
+    height:93px;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+    padding:15px;
+    position: sticky;
+  }
+  #stats{
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    color: white;
+    width:135px;
+    height:47px;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    margin: 14px 0 0 1250px;
+  }
 }
 
-/* Medium devices (landscape tablets, 900px and up) */
-@media only screen and (min-width: 900px) {
-  #stats{
-    margin: 4px 0 0 940px;
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+  body{
+    background-image: url(images/bmwI3BG.jpg);
   }
-
-}
-
-/* Large devices (laptops/desktops, 1024px and up) */
-@media only screen and (min-width: 1024px) {
-  #stats{
-    margin: 4px 0 0 1140px;
+  #subTitle{
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: lightgreen;
+    margin: 110px 0 0 400px;
+    position: fixed;
+    /* position: sticky; */
   }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #stats{
-    margin: 4px 0 0 1240px;
+  #gameBoard{
+    margin: 200px 0 0 400px;
+    background-color:rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 980px;
+    height:350pxtes;
+    position: fixed;
   }
-
+  #controlPanel{
+    margin: 600px 0 50px 400px;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    width: 950px;
+    height:93px;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+    padding:15px;
+    position: sticky;
+  }
+  #stats{
+    font-family: 'Syncopate', sans-serif;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 8px;
+    color: white;
+    width:135px;
+    height:47px;
+    padding-top: 14px;
+    font-size: 18px;
+    text-align: center;
+    position: fixed;
+    margin: 14px 0 0 1250px;
+  }
 }
