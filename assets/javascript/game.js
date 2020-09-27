@@ -33,6 +33,7 @@ $(document).ready(function() {
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...
+    initKeys();    
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
@@ -136,10 +137,13 @@ $(document).ready(function() {
         }
 
     }
+    function RestrictSpace() {
+        
+    }
 
 };
 
-function activateKeys() {
+function initKeys() {
     $('#my-textarea').focus().click();
 }
 
