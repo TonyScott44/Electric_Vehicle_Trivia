@@ -43,7 +43,9 @@ $(document).ready(function() {
     if(keyStroke === 1){  // If user's first try...
         document.getElementById("gbTitle").innerHTML = "";
         document.getElementById("gbSubTitle").innerHTML = "";
+        document.getElementById("gbSubTitle2").innerHTML = "";
         document.getElementById("gameMsg").innerHTML = "";
+        document.getElementById("gameMsg2").innerHTML = "";
 
         game.wrdSpaces = ["_ _ _ _ _ + _ _ _ _ _ + _", "_ _ _ _ _ + _ _ _ _ _ + _", "_ _ _ _ _ + _ _ _ _ _ + _",
             "_ _ _ + _ _", "_ _ _ + _ _", "_ _ _ _ _ + _ _ _", "_ _ _ _ _ + _ _ _ _ _ _"];
@@ -127,6 +129,7 @@ $(document).ready(function() {
                 game.loses++;
                 document.getElementById("l").innerHTML = game.loses;
                 document.getElementById("gameMsg").innerHTML = "Sorry you lost this round. Press any key to try again.";
+                document.getElementById("gameMsg2").innerHTML = "Sorry you lost this round. Tap the screen to try again.";
                 keyStroke = 0;
             }
            
@@ -138,6 +141,11 @@ $(document).ready(function() {
     }
 
 };
+
+function openKeys() {
+    console.log("open keys");
+    Keyboard.init();
+  }
 
 
 

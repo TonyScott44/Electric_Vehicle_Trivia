@@ -230,8 +230,18 @@ and (max-device-width : 480px) {
     text-align: center;
     color:white;
     font-size: 20px;
+    display:none;
     /* margin-top:70px; */
    }
+   #gbSubTitle2{
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    display:show;
+    /* margin-top:70px; */
+   }
+
    #gbText{
     font-size: 130px;
     color: skyblue;
@@ -243,6 +253,16 @@ and (max-device-width : 480px) {
   
    }
    #gameMsg{
+    font-size: 32px;
+    color: white;
+    padding:45px;
+    font-family: 'Syncopate', sans-serif;
+    text-align: center;
+    line-height: 40px; 
+    display:none;
+  
+   }
+   #gameMsg2{
     font-size: 32px;
     color: white;
     padding:45px;

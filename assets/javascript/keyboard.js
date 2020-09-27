@@ -1,3 +1,4 @@
+
 const Keyboard = {
     elements: {
         main: null,
@@ -16,6 +17,7 @@ const Keyboard = {
     },
 
     init() {
+        console.log("keyboard.js accessed");
         // Create main elements
         this.elements.main = document.createElement("div");
         this.elements.keysContainer = document.createElement("div");
@@ -172,6 +174,6 @@ const Keyboard = {
     }
 };
 
-window.addEventListener("DOMContentLoaded", function () {
-    Keyboard.init();
-});
+// window.addEventListener("DOMContentLoaded", function () {
+//     Keyboard.init();
+// });
