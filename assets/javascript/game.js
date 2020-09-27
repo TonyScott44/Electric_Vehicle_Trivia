@@ -136,16 +136,12 @@ $(document).ready(function() {
         }
 
     }
-    function RestrictSpace() {
-        
-    }
 
 };
 
-function openKeys() {
-    console.log("open keys");
-    Keyboard.init();
-  }
+function activateKeys() {
+    $('#my-textarea').focus().click();
+}
 
 
 
