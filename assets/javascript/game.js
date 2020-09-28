@@ -29,6 +29,7 @@ var keyStroke = 0;
 $(document).ready(function() {
     $('#controlPanel').delay(00000).hide(0);
     $('#stats').delay(00000).hide(0);
+    $('#my-textarea').delay(00000).hide(0);
 });
 
 // Start Game 
