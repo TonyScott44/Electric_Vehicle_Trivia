@@ -142,10 +142,13 @@ $(document).ready(function() {
 
 function initKeys() {
     console.log("initKeys accessed");
-    // $('#my-textarea').click();
+    $('#my-textarea').click();
     document.body.scrollTop = 0;
     document.getElementById('my-textarea').value = "4";
+    $('#my-textarea').keyup();
 }
+
+
 
 
 
