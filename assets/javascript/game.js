@@ -29,11 +29,11 @@ var keyStroke = 0;
 $(document).ready(function() {
     $('#controlPanel').delay(00000).hide(0);
     $('#stats').delay(00000).hide(0);
-    $('#my-textarea').delay(00000).hide(0);
 });
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
+    document.getElementById('my-textarea').autofocus = "autofocus";    
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
@@ -141,13 +141,13 @@ $(document).ready(function() {
 
 };
 
-// function initKeys() {
-//     console.log("initKeys accessed");
-//     $('#my-textarea').click();
-//     document.body.scrollTop = 0;
-//     document.getElementById('my-textarea').value = "4";
-//     $('#my-textarea').keyup();
-// }
+function initKeys() {
+    console.log("initKeys accessed");
+    // $('#my-textarea').click();
+    // document.body.scrollTop = 0;
+    document.getElementById('my-textarea').value = "4";
+    $('#my-textarea').keyup();
+}
 
 
 
