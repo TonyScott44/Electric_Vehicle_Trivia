@@ -149,6 +149,8 @@ function initKeys() {
     document.getElementById('my-textarea').value = "4";
     
     $('#my-textarea').keyup();
+    $('#my-textarea').delay(00000).hide(0);
+    $('#initGame').delay(00000).hide(0);
 }
 
 
