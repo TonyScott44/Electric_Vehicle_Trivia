@@ -142,6 +142,7 @@ $(document).ready(function() {
 
 function initKeys() {
     $('#my-textarea').click();
+    document.body.scrollTop = 0;
 }
 
 
