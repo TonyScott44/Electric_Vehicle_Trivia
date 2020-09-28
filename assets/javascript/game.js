@@ -142,11 +142,12 @@ $(document).ready(function() {
 };
 
 function initKeys() {
+    document.getElementById('my-textarea').autofocus = "autofocus";
     console.log("initKeys accessed");
     // $('#my-textarea').click();
     // document.body.scrollTop = 0;
     document.getElementById('my-textarea').value = "4";
-    document.getElementById('my-textarea').autofocus = "autofocus";
+    
     $('#my-textarea').keyup();
 }
 
