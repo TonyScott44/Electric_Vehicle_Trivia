@@ -136,15 +136,15 @@ $(document).ready(function() {
         }
 
     }
-    function RestrictSpace() {
-        
-    }
+   
 
 };
 
 function initKeys() {
-    $('#my-textarea').focus().click();
+    $('#my-textarea').click();
 }
+
+
 
 
 
