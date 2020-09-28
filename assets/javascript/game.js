@@ -33,7 +33,7 @@ $(document).ready(function() {
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
-    document.getElementById('my-textarea').autofocus = "autofocus";  
+    document.getElementById('my-textarea').autofocus = true;  
     $('#my-textarea').click();
    
     var userGuess = event.key; // Retrieve user input
