@@ -33,15 +33,16 @@ $(document).ready(function() {
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
-    document.getElementById('my-textarea').autofocus = true;  
-    $('#my-textarea').click();
-   
+    // document.getElementById('my-textarea').autofocus = true;  
+    // $('#my-textarea').click();
+    focus();
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
     if (event.keyCode == 32 || event.keyCode == 13) { // If spacebar or enter is pressed,  
         userGuess = "_";                              // default the user guess to "_", due to
     }                                                 // spacebar event data corrupting game/events
+    console.log("00");
     console.log(event);
     if(keyStroke === 1){  // If user's first try...
         document.getElementById("gbTitle").innerHTML = "";
@@ -142,13 +143,14 @@ $(document).ready(function() {
    
 
 };
+function focus() {
+    $('#my-textarea').focus();
+  }
 
 function initKeys() {
     console.log("initKeys accessed");
-    
     // document.body.scrollTop = 0;
     document.getElementById('my-textarea').value = "4";
-    prompt();
     $('#my-textarea').keyup();
     $('#my-textarea').delay(00000).hide(0);
     $('#initGame').delay(00000).hide(0);
