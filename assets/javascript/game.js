@@ -33,7 +33,9 @@ $(document).ready(function() {
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
-    document.getElementById('my-textarea').autofocus = "autofocus";     
+    document.getElementById('my-textarea').autofocus = "autofocus";  
+    $('#my-textarea').click();
+   
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
@@ -143,7 +145,7 @@ $(document).ready(function() {
 
 function initKeys() {
     console.log("initKeys accessed");
-    $('#my-textarea').click();
+    
     // document.body.scrollTop = 0;
     document.getElementById('my-textarea').value = "4";
     
