@@ -142,7 +142,7 @@ $(document).ready(function() {
 
 function initKeys() {
     console.log("initKeys accessed");
-    $('#initGame').click();
+    $('#my-textarea').click();
     document.body.scrollTop = 0;
 }
 
