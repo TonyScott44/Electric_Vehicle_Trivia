@@ -329,11 +329,11 @@ and (max-device-width : 480px) {
     /* position: relative; */
     margin: 35px 0 0 700px;
   }
-  input[type='text'],
+  /* input[type='text'],
   input[type='number'],
   #my-textarea{
     font-size:16px;
-  }
+  } */
 }
 
 /* iPads (portrait and landscape) ----------- */
