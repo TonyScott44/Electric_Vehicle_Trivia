@@ -329,16 +329,32 @@ and (max-device-width : 480px) {
     /* position: relative; */
     margin: 35px 0 0 700px;
   }
-  /* input[type='text'],
-  input[type='number'],
-  #my-textarea{
-    font-size:16px;
-  } */
-  select, textarea, input[type="text"], input[type="password"],
-    input[type="datetime"], input[type="datetime-local"],
-    input[type="date"], input[type="month"], input[type="time"],
-    input[type="week"], input[type="number"], input[type="email"],
-    input[type="tel"], input[type="url"]{ font-size: 16px; }
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select:focus,
+  textarea {
+   font-size: 16px !important;
+}
+
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px !important;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
