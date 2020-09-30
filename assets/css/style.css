@@ -193,7 +193,7 @@ and (max-device-width : 480px) {
   }
   #mainTitle{
     font-family: 'Syncopate', sans-serif;
-    font-size: 95px;
+    font-size: 55px;
     color: white;
     font-weight: 500;
     margin: 5px 0 0 44px;
@@ -201,7 +201,7 @@ and (max-device-width : 480px) {
   } 
   #subTitle{
     font-family: 'Monoton', cursive;
-    font-size: 85px;
+    font-size: 45px;
     color: skyblue;
     margin: 180px 0 0 44px;
     position: fixed;
