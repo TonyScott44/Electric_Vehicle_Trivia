@@ -213,8 +213,8 @@ and (max-device-width : 480px) {
   #gameBoard{
     margin: 80px 0 0 0;
     background-color:rgba(0,0,0,.7);
-    border-radius: 8px;
-    width: 400px;
+    border-radius: 0;
+    width: 415px;
     height:250px;
     position: fixed;
   }
@@ -246,13 +246,13 @@ and (max-device-width : 480px) {
    }
 
    #gbText{
-    font-size: 40px;
+    font-size: 44px;
     color: skyblue;
-    padding:45px;
+    padding:50px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    margin-top: -100px;
-    line-height: 115px; 
+    margin-top: -50px;
+    line-height: 50px; 
   
    }
    #gameMsg{
