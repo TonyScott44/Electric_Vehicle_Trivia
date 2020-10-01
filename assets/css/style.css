@@ -215,18 +215,18 @@ and (max-device-width : 480px) {
     background-color:rgba(0,0,0,.7);
     border-radius: 0;
     width: 415px;
-    height:250px;
+    height:150px;
     position: fixed;
   }
   #gbTitle{
-    font-size: 25px;
+    font-size: 20px;
     color: skyblue;
     padding-left:100px;
     padding-top:200px;
     padding-right:100px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    margin:-150px 0 0 0;
+    margin:-155px 0 0 0;
    }
    #gbSubTitle{
     font-family: 'Syncopate', sans-serif;
@@ -246,19 +246,21 @@ and (max-device-width : 480px) {
    }
 
    #gbText{
-    font-size: 44px;
+    font-size: 25px;
     color: skyblue;
-    padding:50px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
     margin-top: -50px;
     line-height: 50px; 
+    padding-top: 50;
+    padding-left: 50;
+    padding-right: 50;
   
    }
    #gameMsg{
     font-size: 32px;
     color: white;
-    padding:45px;
+    padding:50px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
     line-height: 40px; 
@@ -275,10 +277,10 @@ and (max-device-width : 480px) {
   
    }
   #controlPanel{
-    margin: 1000px 0 2000px 0;
+    margin: 250px 0 0 0;
     background-color: rgba(0,0,0,.7);
-    border-radius: 8px;
-    width: 950px;
+    border-radius: 0;
+    width: 415px;
     height:150px;
     color: white;
     font-family: 'Syncopate', sans-serif;
@@ -301,11 +303,11 @@ and (max-device-width : 480px) {
    }
    #guessesRemTitle{
     color:skyblue;
-    font-size: 35px;
-    line-height: 40px; 
+    font-size: 18px;
+    line-height: 15px; 
   }
   #guessesRemText{
-    font-size: 60px;
+    font-size: 30px;
     margin-top: 8px;
     line-height: 40px; 
   }
@@ -354,7 +356,7 @@ and (max-device-width : 480px) {
    font-size: 16px !important;
 }
 #initGame{
-  margin: 375px 0 0 160px;
+  margin: 385px 0 0 160px;
 }
 
 }
