@@ -219,14 +219,14 @@ and (max-device-width : 480px) {
     position: fixed;
   }
   #gbTitle{
-    font-size: 30px;
+    font-size: 25px;
     color: skyblue;
     padding-left:100px;
     padding-top:200px;
     padding-right:100px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    margin:-50px 0 0 0;
+    margin:-150px 0 0 0;
    }
    #gbSubTitle{
     font-family: 'Syncopate', sans-serif;
@@ -246,12 +246,12 @@ and (max-device-width : 480px) {
    }
 
    #gbText{
-    font-size: 130px;
+    font-size: 40px;
     color: skyblue;
     padding:45px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    margin-top: -120px;
+    margin-top: -100px;
     line-height: 115px; 
   
    }
@@ -352,6 +352,9 @@ and (max-device-width : 480px) {
   select:focus,
   textarea {
    font-size: 16px !important;
+}
+#initGame{
+  margin: 375px 0 0 160px;
 }
 
 }
