@@ -42,7 +42,7 @@ $(document).ready(function() {
     if (event.keyCode == 32 || event.keyCode == 13) { // If spacebar or enter is pressed,  
         userGuess = "_";                              // default the user guess to "_", due to
     }                                                 // spacebar event data corrupting game/events
-    console.log("46");
+    console.log("47");
     console.log(event);
     if(keyStroke === 1){  // If user's first try...
         document.getElementById("gbTitle").innerHTML = "";

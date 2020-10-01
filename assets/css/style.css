@@ -191,39 +191,42 @@ and (max-device-width : 480px) {
   body{
     background-image: url(images/phoneBG.jpg);
   }
+  html, body {margin: 0; height: 100%; overflow: hidden}
+
   #mainTitle{
     font-family: 'Syncopate', sans-serif;
-    font-size: 55px;
+    font-size: 25px;
     color: white;
     font-weight: 500;
-    margin: 5px 0 0 44px;
-    /* position: fixed; */
+    margin: 0 0 0 24px;
+    position: fixed;
   } 
   #subTitle{
     font-family: 'Monoton', cursive;
-    font-size: 45px;
+    font-size: 15px;
     color: skyblue;
-    margin: 180px 0 0 44px;
+    margin: 50px 0 0 24px;
     position: fixed;
     font-weight:400;
     /* position: sticky; */
   }
   #gameBoard{
-    margin: 330px 0 0 0;
+    margin: 80px 0 0 0;
     background-color:rgba(0,0,0,.7);
     border-radius: 8px;
-    width: 1000px;
-    height:750px;
+    width: 400px;
+    height:250px;
     position: fixed;
   }
   #gbTitle{
-    font-size: 70px;
+    font-size: 30px;
     color: skyblue;
     padding-left:100px;
     padding-top:200px;
     padding-right:100px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
+    margin:-50px 0 0 0;
    }
    #gbSubTitle{
     font-family: 'Syncopate', sans-serif;
@@ -328,6 +331,9 @@ and (max-device-width : 480px) {
     text-align: center;
     /* position: relative; */
     margin: 35px 0 0 700px;
+  }
+  #my-textarea{
+    margin: 2000px 0 0 0;
   }
   input[type="color"],
   input[type="date"],
