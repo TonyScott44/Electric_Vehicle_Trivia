@@ -30,6 +30,9 @@ $(document).ready(function() {
     $('#controlPanel').delay(00000).hide(0);
     $('#stats').delay(00000).hide(0);
 });
+$(window).on('unload', function() {
+    $(window).scrollTop(0);
+ });
 
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
