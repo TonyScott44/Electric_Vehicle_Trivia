@@ -193,7 +193,7 @@ and (max-device-width : 480px) {
     background-image: url(images/phoneBG.jpg);
 
   }
-  html, body {margin: 0; height: 100%; overflow: hidden}
+  html, body {margin: 0; height: 100%; overflow: hidden;z-index:10;}
 
   #mainTitle{
     font-family: 'Syncopate', sans-serif;
@@ -342,7 +342,8 @@ and (max-device-width : 480px) {
     margin: 0 0 0 270px;
   }
   #my-textarea{
-    margin: 0 0 0 1000;
+    margin: 0 0 0 0;
+    z-index:-1000;
   }
   input[type="color"],
   input[type="date"],
