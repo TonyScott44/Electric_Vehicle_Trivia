@@ -72,8 +72,8 @@ $(window).on('unload', function() {
                 }
             }
             document.getElementById("wrongGuessesTitle").innerHTML = "Incorrect Guesses";
-            document.getElementById("guessesRemTitle").innerHTML = "Guesses Remaining";
-
+            document.getElementById("guessesRemTitle").innerHTML = "Guesses";
+            document.getElementById("guessesRemSubTitle").innerHTML = "Remaining";
             document.getElementById("guessesRemText").innerHTML = game.gsRem;
             document.getElementById("gbText").innerHTML = tempArray.join(" ");
 

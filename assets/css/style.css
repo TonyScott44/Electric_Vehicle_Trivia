@@ -199,20 +199,20 @@ and (max-device-width : 480px) {
     font-size: 25px;
     color: white;
     font-weight: 500;
-    margin: 0 0 0 24px;
+    margin: -15px 0 0 24px;
     position: fixed;
   } 
   #subTitle{
     font-family: 'Monoton', cursive;
     font-size: 16px;
     color: skyblue;
-    margin: 50px 0 0 24px;
+    margin: 35px 0 0 24px;
     position: fixed;
     font-weight:400;
     /* position: sticky; */
   }
   #gameBoard{
-    margin: 80px 0 0 0;
+    margin: 65px 0 0 0;
     background-color:rgba(0,0,0,.7);
     border-radius: 0;
     width: 415px;
@@ -278,11 +278,11 @@ and (max-device-width : 480px) {
   
    }
   #controlPanel{
-    margin: 250px 0 0 0;
+    margin: 225px 0 0 0;
     background-color: rgba(0,0,0,.7);
     border-radius: 0;
     width: 415px;
-    height:150px;
+    height:90px;
     color: white;
     font-family: 'Syncopate', sans-serif;
     padding:15px;
@@ -290,19 +290,24 @@ and (max-device-width : 480px) {
   }
   #cpSection1{
     border-right: 4px solid skyblue;
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 95px;
     text-align: center;
-    line-height: 19px; 
+    line-height: 30px; 
    }  
    #cpSection2{
     border-left: 4px solid white;
-     margin: -150px 0 0 315px;
-     height: 125px;
+     margin: -95px 0 0 142px;
+     height: 70px;
      padding:12px;
      text-align: center;
    }
    #guessesRemTitle{
+    color:skyblue;
+    font-size: 16px;
+    line-height: 25px; 
+  }
+  #guessesRemSubTitle{
     color:skyblue;
     font-size: 16px;
     line-height: 15px; 
@@ -314,12 +319,12 @@ and (max-device-width : 480px) {
   }
   #wrongGuessesTitle{
     line-height: 22px;
-    font-size:33px;
+    font-size:16px;
   }
    #guessedWrong{
     color:red;
     margin-top: 8px;
-    font-size: 50px;
+    font-size: 22px;
   
    }
   #stats{
@@ -327,13 +332,13 @@ and (max-device-width : 480px) {
     background-color: rgba(0,0,0,.7);
     border-radius: 8px;
     color: white;
-    width:250px;
-    height:115px;
-    padding-top: 30px;
-    font-size: 35px;
+    width:120px;
+    height:40px;
+    padding-top: 10px;
+    font-size: 16px;
     text-align: center;
     /* position: relative; */
-    margin: 35px 0 0 700px;
+    margin: 0 0 0 270px;
   }
   #my-textarea{
     margin: 2000px 0 0 0;
