@@ -190,7 +190,7 @@ and (max-device-width : 480px) {
 /* Styles */
   body{
     background-image: url(images/phoneBG.jpg);
-    position:fixed;
+    overflow:hidden;
   }
   html, body {margin: 0; height: 100%; overflow: hidden}
 
