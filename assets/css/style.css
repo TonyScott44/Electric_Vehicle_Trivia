@@ -222,7 +222,7 @@ and (max-device-width : 480px) {
   }
   #gbTitle{
     font-size: 20px;
-    color: skyblue;
+    color: white;
     padding-left:100px;
     padding-top:200px;
     padding-right:100px;
@@ -364,7 +364,12 @@ and (max-device-width : 480px) {
    font-size: 16px !important;
 }
 #initGame{
-  margin: 385px 0 0 160px;
+  margin: 245px 0 0 160px;
+  font-family: 'Syncopate', sans-serif;
+  background-color: black;
+  color: skyblue;
+  font-weight: 500;
+  padding:10px;
 }
 
 }
