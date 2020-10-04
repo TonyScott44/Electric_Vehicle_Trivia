@@ -342,7 +342,7 @@ and (max-device-width : 480px) {
   }
   #my-textarea{
     margin: 0 0 0 0;
-    z-index:-999;
+    z-index:-9999;
   }
   input[type="color"],
   input[type="date"],
