@@ -203,7 +203,7 @@ and (max-device-width : 480px) {
   } 
   #subTitle{
     font-family: 'Monoton', cursive;
-    font-size: 15px;
+    font-size: 16px;
     color: skyblue;
     margin: 50px 0 0 24px;
     position: fixed;
@@ -303,7 +303,7 @@ and (max-device-width : 480px) {
    }
    #guessesRemTitle{
     color:skyblue;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 15px; 
   }
   #guessesRemText{
