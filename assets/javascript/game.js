@@ -42,9 +42,10 @@ $(window).on('unload', function() {
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
-    if (event.keyCode == 32 || event.keyCode == 13) { // If spacebar or enter is pressed,  
+    if (event.keyCode == 32 || event.keyCode == 13 || event.keyCode == 8) { // If spacebar or enter is pressed,  
         userGuess = "_";                              // default the user guess to "_", due to
     }                                                 // spacebar event data corrupting game/events
+    
     console.log("444");
     console.log(event);
     if(keyStroke === 1){  // If user's first try...
