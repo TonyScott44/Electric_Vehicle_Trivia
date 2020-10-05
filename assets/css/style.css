@@ -222,7 +222,7 @@ and (max-device-width : 480px) {
   }
   #gbTitle{
     font-size: 20px;
-    color: white;
+    color: skyblue;
     padding-left:100px;
     padding-top:200px;
     padding-right:100px;
@@ -252,32 +252,34 @@ and (max-device-width : 480px) {
     color: skyblue;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -30px;
     line-height: 50px; 
     padding-top: 50;
     padding-left: 50;
     padding-right: 50;
+    position: fixed;
   
    }
    #gameMsg{
-    font-size: 32px;
+    font-size: 12px;
     color: white;
     padding:50px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    line-height: 40px; 
-    display:none;
-  
+    line-height: 15px; 
+    margin-top: -90px;
+    font-weight: 500;
+    position: absolute;
    }
-   #gameMsg2{
-    font-size: 32px;
+   /* #gameMsg2{
+    font-size: 16px;
     color: white;
     padding:45px;
     font-family: 'Syncopate', sans-serif;
     text-align: center;
-    line-height: 40px; 
+    line-height: 10px; 
   
-   }
+   } */
   #controlPanel{
     margin: 225px 0 0 0;
     background-color: rgba(0,0,0,.7);
@@ -370,6 +372,7 @@ and (max-device-width : 480px) {
   color: skyblue;
   font-weight: 500;
   padding:10px;
+  position: absolute;
 }
 
 }

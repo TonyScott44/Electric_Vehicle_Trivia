@@ -120,6 +120,7 @@ $(window).on('unload', function() {
         document.getElementById("win").innerHTML = game.wins;
         document.getElementById("gbText").innerHTML = tempArray.join(" ");
         document.getElementById("gameMsg").innerHTML = "Great job! Press any key to play again.";
+        document.getElementById("gameMsg").style.color = "green";
         keyStroke = 0;
         guessesCorrectCnt = 0;
 
@@ -135,8 +136,10 @@ $(window).on('unload', function() {
             if(game.gsRem === 0){
                 game.loses++;
                 document.getElementById("l").innerHTML = game.loses;
-                document.getElementById("gameMsg").innerHTML = "Sorry you lost this round. Press any key to try again.";
-                document.getElementById("gameMsg2").innerHTML = "Sorry you lost this round. Tap the screen to try again.";
+                document.getElementById("gameMsg").innerHTML = `Sorry you lost this round. The correct answer was ${game.actualWord[randx]}. Press any key to try again.`;
+                document.getElementById("gameMsg").style.color = "red";
+
+                // document.getElementById("gameMsg2").innerHTML = "Sorry you lost this round. Press any key to try again.";
                 keyStroke = 0;
             }
            
