@@ -184,6 +184,8 @@ and (max-device-width : 280px) {
   }
 }
 
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -193,6 +195,15 @@ and (max-device-width : 480px) {
     background-image: url(images/phoneBG.jpg);
 
   }
+  html{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
   html, body {margin: 0; height: 100%; overflow: hidden;z-index:10;}
 
   #mainTitle{
