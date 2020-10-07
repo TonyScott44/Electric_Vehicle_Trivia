@@ -541,4 +541,7 @@ and (min-width : 1824px) {
     position: fixed;
     margin: 14px 0 0 1250px;
   }
+  #my-textarea,#initGame{
+    display:none;
+  }
 }
