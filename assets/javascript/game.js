@@ -34,6 +34,10 @@ $(window).on('unload', function() {
     $(window).scrollTop(0);
  });
 
+ window.onkeydown = function(e) {  //Prevent spacebar from scrolling down
+    return !(e.keyCode == 32);
+};
+
 // Start Game 
     document.onkeyup = function(event) {  // Everytime a key is pressed...  
     // document.getElementById('my-textarea').autofocus = true;  
@@ -42,6 +46,7 @@ $(window).on('unload', function() {
     var userGuess = event.key; // Retrieve user input
     var guessCorrect = false;  // UserGuess wrong or right indicator
     keyStroke++;  // Increment keystroke (counts each time a key is pressed during a game session)
+    
     if (event.keyCode == 32 || event.keyCode == 13 || event.keyCode == 8) { // If spacebar or enter is pressed,  
         userGuess = "_";                              // default the user guess to "_", due to
     }                                                 // spacebar event data corrupting game/events
@@ -121,7 +126,7 @@ $(window).on('unload', function() {
         document.getElementById("win").innerHTML = game.wins;
         document.getElementById("gbText").innerHTML = tempArray.join(" ");
         document.getElementById("gameMsg").innerHTML = "Great job! Press any key to play again.";
-        document.getElementById("gameMsg").style.color = "green";
+        document.getElementById("gameMsg").style.color = "lightgreen";
         keyStroke = 0;
         guessesCorrectCnt = 0;
 
