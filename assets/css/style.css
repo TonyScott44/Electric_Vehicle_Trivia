@@ -449,30 +449,44 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
-  body{
-    background-image: url(images/bmwI3BG.jpg);
-  }
+body{
+  background-position: center center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; background-size: cover; 
+  background-image: url(images/bmwI3BG.jpg);
+  z-index:100;
+}
+
+  #mainTitle{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: 500;
+    margin: 5px 0 0 230px;
+    position: fixed;
+  } 
   #subTitle{
     font-family: 'Monoton', cursive;
-    font-size: 35px;
+    font-size: 25px;
     color: lightgreen;
-    margin: 110px 0 0 400px;
+    margin: 75px 0 0 230px;
     position: fixed;
+
     /* position: sticky; */
   }
   #gameBoard{
-    margin: 200px 0 0 400px;
+    margin: 130px 0 0 230px;
     background-color:rgba(0,0,0,.7);
     border-radius: 8px;
-    width: 980px;
-    height:350pxtes;
+    width: 811px;
+    height:275px;
     position: fixed;
   }
   #controlPanel{
-    margin: 600px 0 50px 400px;
+    margin: 440px 0 50px 230px;
     background-color: rgba(0,0,0,.7);
     border-radius: 8px;
-    width: 950px;
+    width: 780px;
     height:93px;
     color: white;
     font-family: 'Syncopate', sans-serif;
@@ -484,13 +498,110 @@ and (min-width : 1224px) {
     background-color: rgba(0,0,0,.7);
     border-radius: 8px;
     color: white;
-    width:135px;
-    height:47px;
+    width:115px;
+    height:40px;
     padding-top: 14px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     position: fixed;
-    margin: 14px 0 0 1250px;
+    margin: 19px 0 0 928px;
+  }
+  #win{
+    color:lightgreen;
+    font-weight: 500;
+    
+  }
+  #l{
+    color:red;
+    font-weight: 500;
+ }
+ #cpSection1{
+  border-right: 2px solid lightgreen;
+  width: 150px;
+  height: 95px;
+  text-align: center;
+  line-height: 19px; 
+ }  
+ #cpSection2{
+  border-left: 2px solid white;
+   margin: -95px 0 0 155px;
+   height: 71px;
+   padding:12px;
+   text-align: center;
+ }
+ #guessesRemTitle{
+  color:lightgreen;
+}
+#guessesRemText{
+  font-size: 44px;
+  margin-top: 8px;
+  line-height: 40px; 
+}
+#wrongGuessesTitle{
+  line-height: 22px;
+}
+ #guessedWrong{
+  color:red;
+  margin-top: 8px;
+  font-size: 30px;
+
+ }
+ #gbTitle{
+  font-size: 30px;
+  color: lightgreen;
+  padding-left:100px;
+  padding-top:100px;
+  padding-right:100px;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+ }
+ #gbSubTitle{
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  color:white;
+  margin-top: 35px;
+  font-size: 20px;
+ }
+ #gbText{
+  font-size: 44px;
+  color: lightgreen;
+  padding:15px;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  /* margin-top: -90px; */
+  /* line-height: 47px;  */
+
+ }
+ #gameMsg{
+  font-size: 20px;
+  color: white;
+  padding:50px;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+  line-height: 27px; 
+  margin-top: -190px;
+  font-weight: 600;
+  position: absolute;
+ }
+ #lpTitle{
+  font-size: 25px;
+  margin-top: 25px;
+  color: white;
+  padding:60px;
+  font-family: 'Syncopate', sans-serif;
+  text-align: center;
+ }
+ #lpText{
+  font-family: 'Syncopate', sans-serif;
+  font-size: 15px;
+  color:red;
+  
+ }
+
+  
+
+  #my-textarea,#initGame{
+    display:none;
   }
 }
 
